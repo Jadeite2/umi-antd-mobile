@@ -1,0 +1,174 @@
+:global{
+  .search_cart{
+    overflow: auto;
+    top: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    .search_cart_Search {
+      background-image: linear-gradient(90deg, #FA9850 3%, #FF6262 100%);
+      height: 1.74rem;
+      position: relative;
+      .am-search {
+        height: .94rem;
+        padding: .19rem .31rem;
+        .am-search-input {
+          background: rgb(235, 236, 241);
+          height: .56rem;
+          input{
+            height: .56rem;
+          }
+        }
+      }
+      .am-search-input .am-search-synthetic-ph {
+        text-align: left;
+        background: #fff;
+        text-indent: 1em;
+        height: .56rem;
+        line-height: .56rem;
+        font-size: 12px;
+      }
+      .crosswiseMeun{
+        /*
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top:.94rem;
+        */
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling:auto;
+        a{
+          height: .8rem;
+          line-height: .8rem;
+          margin: 0 .4rem;
+          font-size: .3rem;
+          color: #fff;
+          cursor: pointer;
+        }
+        .active{
+          position: relative;
+          &:after{
+            content: "";
+            height: 0.1rem;
+            border-radius: 2px;
+            background: #FEDA58;
+            position: absolute;
+            bottom: -0.22rem;
+            width: 130%;
+            left: -15%;
+          }
+        }
+      }
+    }
+    .search-cart__content{
+    .null{
+      margin: 0 auto;
+      img{
+        width: 2rem;
+        padding-top: 1rem;
+      }
+      text-align: center;
+      .title{
+        padding-top: .1rem;
+        color: #999;
+        font-size: .32rem;
+      }
+    }
+    flex: 1;
+    display: flex;
+    height: calc(100% - 1.7rem);
+    .am-list-body::before {
+      height: 0;
+    }
+    .search-cart__content-menu {
+      width: 2rem;
+      height: 100%;
+      background: rgb(235, 236, 241);
+      overflow: auto;
+      .am-list-item {
+        border-left: 0.08rem solid rgb(235, 236, 241);
+        padding-left: 0.15rem;
+      }
+      .am-list-content {
+        font-size: 14px !important;
+      }
+      .am-sub-menu-item-selected {
+        border-left: 0.08rem solid #FF6262;
+        background: #fff;
+        .am-list-content {
+          color: rgb(32, 5, 5) !important;
+          color: #FF6262 !important;
+        }
+        .am-radio-inner {
+          display: none;
+        }
+      }
+      .am-flexbox .am-flexbox-item:last-child {
+        background: #EDEDED;
+      }
+      .am-flexbox .am-flexbox-item:first-child .am-list .am-list-body {
+        background: rgb(235, 236, 241);
+      }
+      .am-flexbox .am-flexbox-item:last-child .am-list .am-list-item {
+        background: rgb(235, 236, 241);
+      }
+      .am-flexbox .am-flexbox-item:last-child .am-list .am-sub-menu-item-selected {
+        background: #fff;
+      }
+
+    }
+    .search-cart__content-tab {
+      flex: 1;
+      display: flex;
+      flex-flow: wrap;
+      align-content: flex-start;
+      background: #fff;
+      overflow: auto;
+      .serch-cart__content-tab__sub {
+        width: 100%;
+        height: 44px;
+        padding-left: .8rem;
+        position: relative;
+        .sub-number {
+          height: .3rem;
+          width: .3rem;
+          background: #333;
+          position: absolute;
+          left: .3rem;
+          top:50%;
+          transform: translateY(-50%);
+          color: #999;
+          text-align: center;
+          background: url(https://res.zudeapp.com/recycle/recycleH5_24.png) no-repeat center;
+          background-size: .3rem .3rem;
+          line-height: .31rem;
+          font-family:"DINPro-Bold";
+        }
+        .sub-numberBg01{
+          background: url(https://res.zudeapp.com/recycle/recycleH5_21.png) no-repeat center;
+          background-size: .3rem .3rem;
+          color: #fff;
+        }
+        .sub-numberBg02{
+          background: url(https://res.zudeapp.com/recycle/recycleH5_22.png) no-repeat center;
+          background-size: .3rem .3rem;
+          color: #fff;
+        }
+        .sub-numberBg03{
+          background: url(https://res.zudeapp.com/recycle/recycleH5_23.png) no-repeat center;
+          background-size: .3rem .3rem;
+          color: #fff;
+        }
+        .sub-name {
+          text-align: left;
+          height: 100%;
+          line-height: 44px;
+        }
+      }
+    }
+  }
+  }
+}

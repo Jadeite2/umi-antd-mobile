@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json 提供了Web应用程序添加到安卓上的主页时使用的初始数据。
+      详情 https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/logo.png"> -->
+    <!--
+      地址使用公共头%PUBLIC_URL%
+      静态文件引入放在 `public`文件夹内.
+      只能从HTML中引用 `public` 文件夹中的文件。
+    -->
+    <title>若余回收</title>
+    <!-- set `maximum-scale` for some compatibility issues -->
+    <!-- 强制显示方式 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <!-- 允许全屏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 顶端状态条样式 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- 忽略将数字变为电话号码 -->
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-title" content="若余">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- qq强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- uc强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- qq强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- uc应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- qq应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+    <script src="https://gw.alipayobjects.com/as/g/h5-lib/alipayjsapi/3.1.1/alipayjsapi.min.js"></script>
+    <script>
+      var winWidth = window.innerWidth;
+      var winHeight = window.innerHeight;
+      var perRemPx = document.getElementsByTagName("html")[0].clientWidth / 7.5;
+
+      window.addEventListener("resize", function () {
+          perRemPx = document.getElementsByTagName("html")[0].clientWidth / 7.5;
+          document.getElementsByTagName("html")[0].style.fontSize = perRemPx + "px";
+      });
+      document.getElementsByTagName("html")[0].style.fontSize = perRemPx + "px";
+
+      if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body);
+        }, false);
+      }
+      if(!window.Promise) {
+        document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+      }
+    </script>
+    <!-- GrowingIO Analytics code version 2.1 -->
+    <!-- Copyright 2015-2018 GrowingIO, Inc. More info available at http://www.growingio.com -->
+    <script type='text/javascript'>
+    !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
+      gio('init','ab676b35608acb2d', {});
+    //custom page code begin here
+    //custom page code end here
+    gio('send');
+    </script>
+    <!-- End GrowingIO Analytics code version: 2.1 -->
+</head>
+<body><div id="root"></div></body>
+</html>

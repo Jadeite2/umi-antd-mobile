@@ -1,0 +1,240 @@
+:global{
+  .homePage{
+    background: #f7f7f7;
+    .homePage_search{
+      height: 3.75rem;
+      width: 100%;
+      position: relative;
+      background: #ccc;
+      .homePage_input{
+        position: absolute;
+        left: .24rem;
+        right: 1rem;
+        top:.2rem;
+        .am-search{
+          z-index: 11;
+          padding: 0;
+        }
+      }
+      .homePage_search_ico{
+        position: absolute;
+        right: 0;
+        top: 0.2rem;
+        width: 1rem;
+        height: 1rem;
+        z-index: 11;
+        text-align: center;
+        line-height: .8rem;
+        img {
+          width: .42rem;
+          height: .42rem;
+        }
+      }
+    }
+    .stepBlock{
+      background-color: #fff;
+      height: 2.68rem;
+      margin-bottom: .2rem;
+      &title{
+        font-size: .36rem;
+        font-weight: bold;
+        color: #333;
+        height: .98rem;
+        padding: .26rem .32rem;
+      }
+      &img{
+        width: 100%;
+        height: 1.7rem;
+      }
+      &.hotMobileBlock{
+        height: 2.36rem;
+      }
+      .hotMobile_block{
+        padding: 0 .3rem;
+      }
+      .hotMobile{
+        text-align: center;
+        .hotMobile_icon{
+          height: .8rem;
+          width: 100%;
+          background: url(../../assets/recycleH5_apple.png) 0 center no-repeat;
+          background-size: contain;
+          &.oppo{
+            background: url(../../assets/recycleH5_oppo.png) 0 center no-repeat;
+            background-size: contain;
+          }
+          &.vivo{
+            background: url(../../assets/recycleH5_vivo.png) 0 center no-repeat;
+            background-size: contain;
+          }
+          &.huawei{
+            background: url(../../assets/recycleH5_huawei.png) 0 center no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+    }
+    .itemList{
+      margin-top: .2rem;
+      background: #fff;
+      &title{
+        font-size: .36rem;
+        font-weight: bold;
+        background-color: #fff;
+        color: #333;
+        height: .98rem;
+        padding: .26rem .32rem;
+      }
+      .hotlist{
+        padding: .32rem;
+        .itemBlock{
+          width: 47%;
+          display: inline-block;
+          box-shadow: #ccc 3px 2px 16px -4px;
+          padding: 0.3rem;
+          // height: 5.6rem;
+          &:nth-child(2n+1){
+            margin-right: 4%;
+          }
+          .product_img{
+            width: 2.7rem;
+            height: 2.7rem;
+            margin: 0 auto;
+            box-sizing: border-box;
+            text-align: center;
+            .img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .text_ellipsis{
+            text-align: center;
+            font-size: .28rem;
+            color: #333;
+            text-overflow: ellipsis;
+            word-break: break-all;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            /*! autoprefixer: off */
+            -moz-box-orient: vertical;
+            -webkit-box-orient: vertical;
+            /*! autoprefixer: on */
+            overflow: hidden;
+            height: 0.86rem;
+          }
+          .priceBox{
+            text-align: center;
+            color:#999;
+            font-size: .26rem;
+            .price{
+              font-size: .3rem;
+              line-height: .26rem;
+              font-weight: bold;
+              color:#ea4b3b;
+              font-family:"DINPro-Bold";
+            }
+          }
+          .btn {
+            width: 100%;
+            height: .58rem;
+            line-height: .58rem;
+            text-align: center;
+            margin-top: .17rem;
+            background-image: linear-gradient(90deg, #FE8264 3%, #FF6262 100%);
+            border-radius: .12rem;
+            font-family: PingFangHK-Regular;
+            font-size: .28rem;
+            color: #FFFFFF;
+          }
+        }
+      }
+      .hotlist{
+        padding: .32rem;
+        .itemBlock{
+          width: 47%;
+          display: inline-block;
+          border-radius: .12rem;
+          box-shadow: #ccc 3px 2px 16px -4px;
+          padding: 0.3rem;
+          margin-bottom: .2rem;
+          // height: 5.6rem;
+          &:nth-child(2n+1){
+            margin-right: 5.2%;
+          }
+          .product_img{
+            width: 2.7rem;
+            height: 2.7rem;
+            margin: 0 auto;
+            box-sizing: border-box;
+            text-align: center;
+            .img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .text_ellipsis{
+            text-align: center;
+            font-size: .28rem;
+            color: #333;
+            text-overflow: ellipsis;
+            word-break: break-all;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            /*! autoprefixer: off */
+            -moz-box-orient: vertical;
+            -webkit-box-orient: vertical;
+            /*! autoprefixer: on */
+            overflow: hidden;
+            height: 0.86rem;
+          }
+          .priceBox{
+            text-align: center;
+            color:#999;
+            font-size: .26rem;
+            .price{
+              font-size: .3rem;
+              line-height: .26rem;
+              font-weight: bold;
+              color:#ea4b3b;
+              font-family:"DINPro-Bold";
+            }
+          }
+          .btn {
+            width: 100%;
+            height: .58rem;
+            line-height: .58rem;
+            text-align: center;
+            margin-top: .17rem;
+            background-image: linear-gradient(90deg, #FE8264 3%, #FF6262 100%);
+            border-radius: .12rem;
+            font-family: PingFangHK-Regular;
+            font-size: .28rem;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+    .itemListtitle{
+      position: relative;
+      padding-right: 2rem;
+      .gotoMore{
+        position: absolute;
+        right: .3rem;
+        top:0;
+        font-weight:400;
+        font-size: .28rem;
+        bottom: 0;
+        line-height: .98rem;
+        color: #999;
+        padding-right: .3rem;
+        img{
+          height: .28rem;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}

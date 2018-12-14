@@ -1,0 +1,57 @@
+.orders {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  padding: 0.31rem 0.31rem 0.3rem 0.31rem;
+  border-bottom: 0.01rem solid #E4E4E4;
+  .order_text_large {
+    font-family: PingFangSC-Medium;
+    font-size: 0.3rem;
+    color: #333;
+    letter-spacing: 0;
+    line-height: 0.28rem;
+  }
+
+  .order_text_right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    color: #a4a4a4;
+    font-size: 12px;
+    .right_content {
+      background: url(https://res.zudeapp.com/recycle/recycleH5_44.png) no-repeat right center;
+      background-size: cover;
+      display: block;
+      background-size: 0.15rem 0.25rem;
+      padding-right: 14px;
+      font-size: 0.28rem;
+      color: #999;
+      text-align: left;
+      line-height: 0.28rem;
+    }
+  }
+}
+.list {
+  display: flex;
+  // justify-content: space-around;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: .2rem 0;
+  width: 100%;
+  .order_status_item{
+    .order_status_item_image_icon, .order_status_item_image_icon_disable{
+      position: absolute;
+      top: -8px;
+      right: 16px;
+    }
+  }
+
+}
+.order_deatil_info{
+  width: 6.9rem;
+  margin-left: 0.3rem;
+  border-radius: 8px;
+  background: #fff;
+}

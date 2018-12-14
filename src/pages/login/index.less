@@ -1,0 +1,308 @@
+:global{
+  .login-bg {
+  min-height: 100%;
+  background: white;
+  padding-top: .98rem;
+}
+.logo-wrap {
+  display: flex;
+  .logo {
+    margin-left: 1.68rem;
+    height: 1.44rem;
+    width: 1.44rem;
+    background: url(../../assets/yay.jpg) no-repeat center;
+    background-size: 1.44rem 1.44rem;
+  }
+  .welcome-wrap {
+    margin-left: .3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .hello {
+      font-family: PingFangSC-Regular;
+      font-size: .6rem;
+      color: #333333;
+      letter-spacing: 0;
+      line-height: .6rem;
+    }
+    .welcome {
+      margin-top: .24rem;
+      font-family: PingFangSC-Regular;
+      font-size: .4rem;
+      color: #999;
+      letter-spacing: 0;
+      line-height: .4rem;
+      span {
+        color: #FF6262;
+      }
+    }
+  }
+}
+.form-wraper {
+  margin-top: .4rem;
+  padding: 0 .5rem;
+  box-sizing: border-box;
+  .input-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 1.1rem;
+    width: 100%;
+    .error {
+      color: red;
+    }
+    input {
+      position: relative;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+    span {
+      margin-bottom: 7px;
+      font-family: PingFangSC-Regular;
+      font-size: 11px;
+      color: #666666;
+      letter-spacing: 0;
+      line-height: 11px;
+    }
+  }
+  .input-wrap-flex {
+    display: flex;
+    .left {
+      flex: 0 0 4.39rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 1.1rem;
+      .error {
+        color: red;
+      }
+      span {
+        margin-bottom: 7px;
+        font-family: PingFangSC-Regular;
+        font-size: 11px;
+        color: #666666;
+        letter-spacing: 0;
+        line-height: 11px;
+      }
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      .img-code {
+        width: 1.59rem;
+        height: .64rem;
+      }
+      .refresh {
+        margin-left: 12px;
+        width: .4rem;
+        height: .38rem;
+        background: url(https://m.zudeapp.com/images/login/new_login/refresh.png) no-repeat center;
+        background-size: .4rem .38rem;
+      }
+      .close {
+        margin-right: 11px;
+        flex: 0 0 20px;
+        height: 20px;
+        background: url(https://m.zudeapp.com/images/login/new_login/close.png) no-repeat center;
+        background-size: 12px 12px;
+      }
+      .code-info {
+        flex: 1;
+        text-align: right;
+        font-family: PingFangHK-Regular;
+        font-size: 14px;
+        color: #333333;
+        letter-spacing: 0;
+      }
+      .gray-info {
+        color: #CCCCCC;
+      }
+      .active-info {
+        color: #FF6262;
+      }
+    }
+  }
+}
+
+.login-wrap {
+  margin-top: .6rem;
+  display: flex;
+  justify-content: center;
+  padding: 0 25px;
+  .login {
+    width: 100%;
+    height: .88rem;
+    line-height: .88rem;
+    text-align: center;
+    background-image: linear-gradient(90deg, #FA9850 3%, #FF6262 100%);
+    border-radius: 100px;
+    font-family: PingFangHK-Regular;
+    font-size: .36rem;
+    color: #FFFFFF;
+    box-shadow: #FA9850 0 5px 16px -4px;
+  }
+  .login:not(.disabled):not(:disabled):active {
+    background: rgba(250, 152, 80, .5);
+  }
+}
+.agree-wrap {
+  margin-top: .4rem;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #999999;
+  line-height: 14px;
+  .agree {
+    color: #FA9850;
+  }
+}
+
+.margin-top-20 {
+  margin-top: .2rem;
+}
+// label动画
+.fade-enter {
+  opacity: 0;
+  transform: translateY(100%);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: all 1s;
+}
+.fade-enter-done {
+  opacity: 1;
+}
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all .4s;
+}
+.fade-exit-done {
+  opacity: 0;
+}
+// input动画
+.input-enter {
+  transform: translateY(0%);
+}
+.input-enter-active {
+  transform: translateY(0%);
+  transition: all 1s;
+}
+.input-enter-done {
+}
+.input-exit {
+  transform: translateY(0%);
+}
+.input-exit-active {
+  transform: translateY(-14px);
+  transition: all 1s;
+}
+.input-exit-done {
+}
+
+.line-wrap {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background: #E5E5E5;
+  .line {
+    //position: absolute;
+    //top: 0;
+    //left: 0;
+    //height: 1px;
+    //width: 100%;
+    //background: #E5E5E5;
+    z-index: 1;
+    position: absolute;
+    left:0;
+    bottom: -1px;
+    background:#E5E5E5;
+    width: 100%;
+    height: 2px;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  .line-enter {
+    width: 0;
+    background: #E5E5E5;
+  }
+  .line-enter-active {
+    width: 100%;
+    background: red;
+    transition: all 1s linear;
+  }
+  .line-enter-done {
+    background: red;
+    width: 100%;
+  }
+  .line-exit {
+    background: red;
+    width: 100%;
+  }
+  .line-exit-active {
+    background: #E5E5E5;
+    width: 0;
+    transition: all 1s linear;
+  }
+  .line-exit-done {
+    background: #E5E5E5;
+    width: 100%;
+  }
+}
+
+.x-scale-1px{
+  position: relative;
+  border:none;
+}
+.x-scale-1px::after{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -1px;
+  background:#E5E5E5;
+  width: 100%;
+  height: 2px;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.x-scale-red-1px{
+}
+.x-scale-red-1px::after{
+  background: #FF6262;
+}
+
+.x-scale-top-1px{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border:none;
+  background: #fff;
+}
+.x-scale-top-1px::after{
+  content: '';
+  position: absolute;
+  left:0;
+  top: 0;
+  background-color: #E4E4E4;
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+}
