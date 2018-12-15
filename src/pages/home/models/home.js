@@ -1,4 +1,4 @@
-import { reg, reqbanner } from 'services/home';
+import { reg } from 'services/home';
 import router from 'umi/router';
 export default {
   namespace: 'home',
